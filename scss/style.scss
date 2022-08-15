@@ -1,12 +1,30 @@
 /* Fonts */
 
 @font-face {
-	font-family: 'Steppe';
-	src: url('../fonts/Steppe.woff2') format('woff2'),
-			 url('../fonts/Steppe.otf') format('opentype');
+	font-family: "Steppe";
+	src: url("../fonts/Steppe.woff2") format("woff2"), url("../fonts/Steppe.otf") format("opentype");
 	font-style: normal;
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: "Libre Baskerville";
+	src: local("Libre Baskerville"), local("LibreBaskerville-Regular"),
+		url("../fonts/librebaskerville.woff2") format("woff2"), url("../fonts/librebaskerville.woff") format("woff"),
+		url("../fonts/librebaskerville.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Libre Baskerville";
+	src: local("Libre Baskerville Italic"), local("LibreBaskerville-Italic"),
+		url("../fonts/librebaskervilleitalic.woff2") format("woff2"),
+		url("../fonts/librebaskervilleitalic.woff") format("woff"),
+		url("../fonts/librebaskervilleitalic.ttf") format("truetype");
+	font-weight: 400;
+	font-style: italic;
 }
 
 /* General Rules */
@@ -38,6 +56,9 @@ body {
 	position: relative;
 	background-color: white;
 	overflow: hidden;
+	font-family: "Steppe";
+	font-style: normal;
+	font-weight: 400;
 }
 
 @media (min-width: 1176px) {
@@ -60,6 +81,43 @@ body {
 	width: 1000px;
 	margin-right: auto;
 	margin-left: auto;
+	position: relative;
+}
+
+.block-title {
+	text-align: center;
+	color: #3b505a;
+
+	h1 {
+		font-size: 53.4px;
+		line-height: 183.5%;
+		margin-top: 32px;
+		margin-bottom: 0;
+	}
+
+	p {
+		font-size: 11.3px;
+		line-height: 14px;
+		margin: 0;
+	}
+}
+
+.mark {
+	position: absolute;
+	font-size: 22.9666px;
+	line-height: 28px;
+	color: #acc0ca;
+
+	hr {
+		border: none;
+		height: 1px;
+		width: 34px;
+		background-color: #acc0ca;
+		transform: rotate(-32deg);
+		position: absolute;
+		right: -18px;
+		top: 12px;
+	}
 }
 
 /* Main banner */
@@ -69,7 +127,7 @@ body {
 	height: 727px;
 	background-image: url("../images/main-banner.webp");
 	padding-top: 25px;
-	font-family: 'Steppe';
+	font-family: "Steppe";
 	font-style: normal;
 	font-weight: 400;
 	position: relative;
@@ -80,9 +138,13 @@ body {
 	header {
 		font-size: 11.4px;
 		line-height: 14px;
-		color: #3B505A;
+		color: #3b505a;
 		display: flex;
 		justify-content: end;
+	}
+
+	.container {
+		position: initial;
 	}
 
 	.menu {
@@ -141,7 +203,7 @@ body {
 		}
 
 		rt {
-			font-family: 'Baskerville';
+			font-family: "Baskerville";
 			font-style: normal;
 			font-size: 14.5px;
 			line-height: 17px;
@@ -152,9 +214,9 @@ body {
 			margin: 0;
 			margin-top: 5px;
 			i {
-				font-size: 14.5px;
+				font-size: 12px;
 				line-height: 16px;
-				font-family: 'Baskerville';
+				font-family: "Libre Baskerville";
 			}
 		}
 
@@ -180,9 +242,9 @@ body {
 		top: 397px;
 		left: 140px;
 		padding: 25px 14px 25px 25px;
-		
+
 		p {
-			font-family: 'Steppe';
+			font-family: "Steppe";
 			font-style: normal;
 			font-weight: 400;
 			font-size: 10px;
@@ -212,3 +274,5 @@ body {
 		}
 	}
 }
+
+/* Options */
