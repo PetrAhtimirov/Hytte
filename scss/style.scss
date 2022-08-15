@@ -40,7 +40,7 @@ body {
 	overflow: hidden;
 }
 
-@media (min-width: 1418px) {
+@media (min-width: 1176px) {
 	.page {
 		border-radius: 40px;
 		margin-left: auto;
@@ -69,13 +69,13 @@ body {
 	height: 727px;
 	background-image: url("../images/main-banner.webp");
 	padding-top: 25px;
+	font-family: 'Steppe';
+	font-style: normal;
+	font-weight: 400;
 
 	/* Header */
 
 	header {
-		font-family: 'Steppe';
-		font-style: normal;
-		font-weight: 400;
 		font-size: 11.4px;
 		line-height: 14px;
 		color: #3B505A;
@@ -125,6 +125,47 @@ body {
 
 		li:last-child {
 			margin-right: 0;
+		}
+	}
+
+	.logo {
+		width: 180px;
+		height: 108px;
+		color: white;
+		position: relative;
+
+		dt {
+			font-size: 53.4px;
+			line-height: 64px;
+		}
+
+		rt {
+			font-family: 'Baskerville';
+			font-style: normal;
+			font-size: 14.5px;
+			line-height: 17px;
+		}
+
+		dd {
+			font-size: 11.3px;
+			margin: 0;
+			margin-top: 5px;
+			i {
+				font-size: 14.5px;
+				line-height: 16px;
+				font-family: 'Baskerville';
+			}
+		}
+
+		hr {
+			width: 77px;
+			height: 0.5px;
+			border: none;
+			background-color: white;
+			position: absolute;
+			transform: rotate(-31.7deg);
+			top: 44.5px;
+			left: 105.2px;
 		}
 	}
 }
