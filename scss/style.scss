@@ -72,6 +72,8 @@ body {
 	font-family: 'Steppe';
 	font-style: normal;
 	font-weight: 400;
+	position: relative;
+	color: white;
 
 	/* Header */
 
@@ -131,7 +133,6 @@ body {
 	.logo {
 		width: 180px;
 		height: 108px;
-		color: white;
 		position: relative;
 
 		dt {
@@ -158,14 +159,56 @@ body {
 		}
 
 		hr {
-			width: 77px;
+			width: 80px;
 			height: 0.5px;
 			border: none;
 			background-color: white;
 			position: absolute;
 			transform: rotate(-31.7deg);
-			top: 44.5px;
+			top: 50px;
 			left: 105.2px;
+		}
+	}
+
+	.house-description {
+		height: 245px;
+		width: 158px;
+		background: rgba(255, 255, 255, 0.09);
+		backdrop-filter: blur(75.2696px);
+		border-radius: 40px;
+		position: absolute;
+		top: 397px;
+		left: 140px;
+		padding: 25px 14px 25px 25px;
+		
+		p {
+			font-family: 'Steppe';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 10px;
+			line-height: 183.5%;
+			margin: 0;
+		}
+
+		hr {
+			width: 78px;
+			height: 0.5px;
+			transform: rotate(-32deg);
+			background-color: white;
+			border: none;
+			position: absolute;
+			top: 0;
+			right: -63px;
+		}
+
+		.circle {
+			position: absolute;
+			top: -13.5px;
+			right: -58px;
+			width: 5px;
+			height: 5px;
+			background-color: white;
+			border-radius: 2.5px;
 		}
 	}
 }
