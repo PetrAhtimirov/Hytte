@@ -381,4 +381,73 @@ body {
 
 .book-content {
 	margin-top: 32px;
+	width: 100%;
+	height: 292px;
+	border-radius: 40px;
+	overflow: hidden;
+	background-image: url("../images/book-background.png");
+	display: flex;
+	flex-direction: column-reverse;
+
+	.data {
+		height: 80px;
+		width: 100%;
+		background: rgba(255, 255, 255, 0.8);
+		box-shadow: 2.42805px 0px 16.187px rgba(66, 78, 96, 0.25);
+		backdrop-filter: blur(75.2696px);
+		border: 2px solid white;
+		border-radius: 40px;
+		display: flex;
+		align-items: center;
+		padding-left: 13px;
+	}
+
+	ul {
+		height: 62px;
+		display: flex;
+
+		.active {
+			background-color: white;
+		}
+
+		li {
+			border: 2px solid white;
+			border-radius: 60px;
+			padding: 13px 25px 13px 32px;
+			display: flex;
+			align-items: center;
+
+			img {
+				width: 20px;
+				height: 20px;
+			}
+
+			.text-group {
+				margin-left: 11px;
+			}
+
+			p {
+				font-weight: 400;
+				font-size: 11.3px;
+				color: #3b505a;
+				margin: 0;
+			}
+
+			h3 {
+				font-weight: 400;
+				font-size: 14.5683px;
+				margin-top: 4px;
+				margin-bottom: 0;
+			}
+
+			.close-button {
+				margin-left: 97px;
+				padding: 0;
+				border: none;
+				background-color: white;
+				cursor: pointer;
+				height: 20px;
+			}
+		}
+	}
 }
