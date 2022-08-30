@@ -410,6 +410,9 @@ body {
 		.active {
 			background-color: white;
 		}
+		.active:hover {
+			background-color: white;
+		}
 
 		li {
 			border: 1px solid white;
@@ -418,6 +421,7 @@ body {
 			display: flex;
 			align-items: center;
 			margin-left: 8px;
+			transition: 0.4s;
 
 			img {
 				width: 20px;
@@ -471,6 +475,10 @@ body {
 			margin-right: 0;
 			cursor: pointer;
 		}
+
+		li:hover {
+			background-color: rgba(255, 255, 255, 0.5);
+		}
 	}
 
 	.search {
@@ -481,5 +489,10 @@ body {
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 5px;
+		transition: 0.4s;
+	}
+
+	.search:hover {
+		transform: scale(1.2) !important;
 	}
 }
